@@ -1,8 +1,5 @@
 <?php
 
-/* =====================================================
- * change this to the email you want the form to send to
- * ===================================================== */
 $email_to = "dizonjerlin@gmail.com"; 
 $email_from = "jamescarl_93@yahoo.com"; // must be different than $email_from 
 $email_subject = "Contact Form submitted";
