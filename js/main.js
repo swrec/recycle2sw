@@ -56,13 +56,13 @@ $(function(){
             dataType: 'json',
 
             success:function(data, textStatus, jqXHR){
-
+				console.log("I'm here!");
                 if(data.success==1){
 
                     form.find(".alert").fadeOut();
                     form.find(".alert-success").html(data.message);
                     form.find(".alert-success").fadeIn(600);
-                    
+                    console.log(data);
 
                 }else{
 
