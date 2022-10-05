@@ -56,7 +56,8 @@ $(function(){
             dataType: 'json',
 
             success:function(data, textStatus, jqXHR){
-				console.log("I'm here!");
+				console.log("I'm here");
+				console.log(data);
                 if(data.success==1){
 
                     form.find(".alert").fadeOut();
