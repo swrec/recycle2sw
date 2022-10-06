@@ -471,7 +471,7 @@
               <h3 class="title-style-1 text-center">Thank you for recycling! <span class="title-under"></span>  </h3>
 
               <div class="form-group col-md-6">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" required>
                   <option selected>Choose the amount of phones you want to recycle!</option>
                   <option value="1">1-4 phones</option>
                   <option value="2">5+ phones</option>
@@ -481,40 +481,31 @@
               
             </div>
               
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" name="firstName" placeholder="First name*">
-                </div>
-
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" name="lastName" placeholder="Last name*">
-                </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="name" placeholder="First and Last Name*">
               </div>
 
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="email" placeholder="Email*">
+              </div>
+            </div>
 
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" name="email" placeholder="Email*">
-                </div>
+            <div class="row">
+
+              <div class="form-group col-md-12">
+                <h5>No Printer? No problem! <a href="#" data-toggle="modal" data-target="#contactModal">CONTACT US</a> to receive a label via mail.</h5>
               </div>
 
+            </div>
 
+            <div class="row">
 
-              <div class="row">
-
-                <div class="form-group col-md-12">
-                  <h5>No Printer? No problem! <a href="#" data-toggle="modal" data-target="#contactModal">CONTACT US</a> to receive a label via mail.</h5>
-                </div>
-
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary pull-right" name="donateNow" >Request Shipping Label</button>
               </div>
 
-              <div class="row">
-
-                <div class="form-group col-md-12">
-                  <button type="submit" class="btn btn-primary pull-right" name="donateNow" >Request Shipping Label</button>
-                </div>
-
-              </div>
+            </div>
 
           </form>
           
@@ -728,7 +719,7 @@
 
                   <div class="row">
                     <div class="form-group col-md-12">
-                        <button type="submit" class="btn btn-primary pull-right" name="donateNow" >Send Message</button>
+                        <button type="submit" class="btn btn-primary pull-right" >Send Message</button>
                     </div>
                   </div>
                   
@@ -797,8 +788,8 @@
             <h3 class="title-style-1 text-center">Do your part for a greener tomorrow, recycle your devices now! <span class="title-under"></span>  </h3>
 
             <div class="form-group col-md-12">
-              <select required class="form-select" name="numOfDevices" aria-label="Default select example">
-                <option selected>Choose the amount of devices you want to recycle!</option>
+              <select class="form-select" name="numOfDevices" aria-label="Default select example" required>
+                <option>Choose the amount of devices you want to recycle!</option>
                 <option value="1-4">1-4 Devices</option>
                 <option value="5+">5+ Devices</option>
                 <br>

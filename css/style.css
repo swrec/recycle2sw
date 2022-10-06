@@ -1,6 +1,6 @@
 body {
   font-family: "Open sans", sans-serif;
-  color: #115c9b;
+  color: #333;
 }
 
 h1,
@@ -25,11 +25,11 @@ a:hover, a:focus, a:active {
 .navbar-static-top {
   margin: 0;
   border: 0;
-  color: #fff;
+  color: 333;
 }
 
 .navbar-top {
-  background: #115c9b;
+  background: beige;
   font-size: 12px;
   padding: 3px 0;
 }
