@@ -1,7 +1,8 @@
 body {
   font-family: "Open sans", sans-serif;
   color: #333;
-  background-color: #d8f2d8;
+  /* background-image: "/images/background.jpeg"; */
+  background-color: rgb(240, 232, 198);
 }
 
 h1,
@@ -46,8 +47,8 @@ a:hover, a:focus, a:active {
 
 .navbar-main {
   margin-bottom: 0;
-  color: #fff;
-  background: #1f76bd;
+  color: #333;
+  background: beige;
 }
 .navbar-main .navbar-brand {
   border-bottom: none !important;
@@ -63,7 +64,7 @@ a:hover, a:focus, a:active {
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
-  background: #1f76bd;
+  background: beige;
   padding: 0;
   width: 150px;
   left: -35px;
@@ -75,10 +76,10 @@ a:hover, a:focus, a:active {
   transition: all, 0.05s;
 }
 .navbar-main .submenu li {
-  border-top: 1px solid #185b91;
+  border-top: 1px solid beige;
 }
 .navbar-main .submenu li:hover {
-  background: #185b91;
+  background: beige;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   -webkit-transition: all, 0.3s;
@@ -159,15 +160,16 @@ a:hover, a:focus, a:active {
 /* Logo */
 .jumbotron{
   text-align:center;
-  /* background-image: url("/images/High\ Resolution\ Logo.png"); */
+  background-image: url("/images/logo-no-background.png");
   background-size: cover;
-  height: auto;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgb(240, 232, 198);
   
 }
 
-.jumbotron.h1{
-  color:green;
-}
+
 /* home/ Tiles 
 ================================= */
 .about-us {
@@ -178,13 +180,13 @@ a:hover, a:focus, a:active {
   height: 325px;
   padding: 25px;
   text-align: center;
-  background-color: #0076a3;
+  background-color: beige;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMjgwODE0IiB5MT0iLTAuMTAyMjA4IiB4Mj0iMC43MTkxODYiIHkyPSIxLjEwMjIwOCI+PHN0b3Agb2Zmc2V0PSItMjUlIiBzdG9wLWNvbG9yPSIjMTE1YjliIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMxMjkwZjgiLz48c3RvcCBvZmZzZXQ9IjEyNSUiIHN0b3AtY29sb3I9IiMxMTViOWIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -moz-linear-gradient(290deg, #115b9b -25%, #1290f8 50%, #115b9b 125%);
-  background-image: -webkit-linear-gradient(290deg, #115b9b -25%, #1290f8 50%, #115b9b 125%);
-  background-image: linear-gradient(160deg, #115b9b -25%, #1290f8 50%, #115b9b 125%);
-  color: #fff;
+  background-image: -moz-linear-gradient(290deg, rgb(16, 218, 16) -25%, rgb(56, 231, 56) 50%, rgb(153, 232, 153) 125%);
+  background-image: -webkit-linear-gradient(290deg, rgb(16, 218, 16) -25%, rgb(56, 231, 56) 50%, rgb(153, 232, 153) 125%);
+  background-image: linear-gradient(160deg, rgb(16, 218, 16) -25%,  rgb(56, 231, 56) 50%, rgb(153, 232, 153) 125%);
+  color: #333;
 }
 .about-us-col .col-icon-wrapper {
   min-height: 80px;
@@ -264,13 +266,13 @@ a:hover, a:focus, a:active {
 /* footer 
 ================================= */
 .footer-top {
-  background: #115c9b;
+  background: beige;
   height: 40px;
 }
 
 .main-footer {
-  background: #1f76bd;
-  color: #fff;
+  background: rgb(240, 232, 198);
+  color: #333;
 }
 .main-footer .footer-main {
   padding: 30px 0;
@@ -308,7 +310,7 @@ a:hover, a:focus, a:active {
 }
 
 .footer-bottom {
-  background: #115c9b;
+  background: beige;
   padding: 3px;
 }
 
@@ -316,7 +318,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 5px;
 }
 .footer-form .form-control {
-  background: #115c9b;
+  background: rgb(217, 214, 214);
   color: #fff;
   border: 0;
   border-radius: 0;
@@ -326,32 +328,32 @@ a:hover, a:focus, a:active {
 }
 .footer-form .btn-submit {
   border-radius: 0;
-  background: #115c9b;
+  background: beige;
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 1px solid #333;
   -moz-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   -webkit-transition: all, 0.5s;
   transition: all, 0.5s;
 }
 .footer-form .btn-submit:hover {
-  background: #fff;
+  background: rgb(217, 214, 214);
 }
 .footer-form input:-moz-placeholder,
 .footer-form textarea:-moz-placeholder {
-  color: #fff;
+  color: #333;
 }
 .footer-form input::-moz-placeholder,
 .footer-form textarea::-moz-placeholder {
-  color: #fff;
+  color: #333;
 }
 .footer-form input:-ms-input-placeholder,
 .footer-form textarea:-ms-input-placeholder {
-  color: #fff;
+  color: #333;
 }
 .footer-form input::-webkit-input-placeholder,
 .footer-form textarea::-webkit-input-placeholder {
-  color: #fff;
+  color: #333;
 }
 
 
@@ -374,8 +376,8 @@ form .alert {
 	Module
 ========================================================================== */
 .btn-primary {
-  background: #115c9b;
-  border: none;
+  background: beige;
+  border: 1px solid #333;
   border-radius: 0;
   padding: 10px 25px;
   border: 1px solid transparent;
@@ -385,18 +387,18 @@ form .alert {
   transition: all, 0.3s;
 }
 .btn-primary:hover {
-  background: #fff;
-  color: #1f76bd;
-  border: 1px solid #1f76bd;
+  background: beige;
+  color: #333;
+  border: 1px solid #333;
 }
 
 .btn-secondary {
-  background: #fff;
-  color: #1f76bd;
+  background: beige;
+  color: #333;
   border-radius: 0;
 }
 .btn-secondary:hover {
-  background: #1f76bd;
+  background: #333;
   color: #fff;
 }
 
@@ -482,7 +484,7 @@ form .alert {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  background: #1f76bd;
+  background: beige;
   color: #fff;
 }
 
@@ -519,7 +521,7 @@ form .alert {
   border-radius: 0;
 }
 .modal .modal-header {
-  background: #1f76bd;
+  background: beige;
   color: #fff;
 }
 .modal .modal-header .close {
