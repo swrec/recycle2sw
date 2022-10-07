@@ -522,7 +522,7 @@ form .alert {
 }
 .modal .modal-header {
   background: beige;
-  color: #fff;
+  color: #333;
 }
 .modal .modal-header .close {
   font-style: 26px;
