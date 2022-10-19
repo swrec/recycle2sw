@@ -665,14 +665,6 @@ form .alert {
     margin-bottom: 25px;
   }
 
-  .team-member {
-    margin-bottom: 25px;
-  }
-
-  .reasons-col {
-    margin-bottom: 25px;
-  }
-
   .footer-col {
     margin-bottom: 50px;
   }
@@ -684,6 +676,17 @@ form .alert {
   }
   .header-contact li {
     margin: 0 !important;
+  }
+
+  .jumbotron{
+    text-align:center;
+    background-image: url("/images/sustainable-world-recycling-high-resolution-logo-color-on-transparent-background.png");
+    background-size: cover;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(240, 232, 198);
+    
   }
 
   .header-social {
