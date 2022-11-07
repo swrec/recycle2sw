@@ -223,13 +223,13 @@
             <div class="col-icon-wrapper">
               <img src="icons/reset-icon.png" alt="">
             </div>
-            <h3 class="col-title">How To Recycle Phones</h3>
+            <h3 class="col-title">How to Recycle Device</h3>
             <div class="col-details ">
 
               <p>Learn ways to recycle your phone!</p>
               
             </div>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#howToModal">Recycle Your Phone!</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#howToModal">Recycle Your Device!</a>
             
           </div>
           
@@ -237,7 +237,7 @@
 
 
         <div class="col-md-4 col-sm-6">
-        
+         
           <div class="about-us-col">
 
             <div class="col-icon-wrapper">
@@ -249,7 +249,7 @@
               <p>Learn how to reset your device!</p>
               
             </div>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#resetModal"> Read How To Reset Your Device!</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#resetModal">How To Reset Your Device!</a>
             
           </div>
           
@@ -303,9 +303,11 @@
   </div> -->
   <div class="btn-holder text-center">
 
-  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#alertModal"> RECYCLE NOW</a>
+  <button type="button" class="recycleBTN" data-toggle="modal" data-target="#alertModal"> RECYCLE NOW</button>
 
   </div>
+
+  
   
   <!-- main-footer -->
   <footer class="main-footer">
@@ -453,72 +455,7 @@
 
   
 
-  <!-- Recycle Now Modal -->
-  <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
 
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="donateModalLabel">RECYCLE NOW</h4>
-        </div>
-        <div class="modal-body">
-
-          <form class="form-donation">
-
-            <div class="row">
-              <h3 class="title-style-1 text-center">Thank you for recycling! <span class="title-under"></span>  </h3>
-
-              <div class="form-group col-md-6">
-                <select class="form-select" aria-label="Default select example" required>
-                  <option selected>Choose the amount of phones you want to recycle!</option>
-                  <option value="1">1-4 phones</option>
-                  <option value="2">5+ phones</option>
-                  <br>
-                </select>
-              </div>
-              
-            </div>
-              
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" name="name" placeholder="First and Last Name*">
-              </div>
-
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" name="email" placeholder="Email*">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group col-md-12">
-                <input type="text" class="form-control" name="address" placeholder="Address*">
-              </div>
-            </div>
-
-            <div class="row">
-
-              <div class="form-group col-md-12">
-                <h5>No Printer? No problem! <a href="#" data-toggle="modal" data-target="#contactModal">CONTACT US</a> to receive a label via mail.</h5>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="form-group col-md-12">
-                <button type="submit" class="btn btn-primary pull-right" name="donateNow" >Request Shipping Label</button>
-              </div>
-
-            </div>
-
-          </form>
-          
-        </div>
-      </div>
-    </div>
-
-  </div> 
 
   <!-- How to Recycle Modal -->
   <div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
@@ -558,9 +495,7 @@
               Tape shipping label to small box or padded envelope
               Drop off package at your nearest USPS location or schedule a pickup</h4>
             <h3>Step 4</h3>
-            <h4>Our Team processes the devices to determine if they are to be either recycled or resold
-              Proceeds are donated to our charity partners
-              Win for both the charities and the environment!!!</h4>
+            <h4>Our Team processes the devices to determine they can be repurposed or recycled.  Congratulations in doing your part of a Sustainable World!</h4>
           </div>
         </div>
       </div>
@@ -742,8 +677,6 @@
           
     
         </div>
-
-        
           
       </div>
     </div>
@@ -787,19 +720,27 @@
       </div>
       <div class="modal-body">
 
-        <form action="https://formspree.io/f/mjvzroge" method="POST">
+        <div class="row">
+          <h3 class="title-style-1 text-center">Do your part for a greener tomorrow, recycle your devices now! <span class="title-under"></span>  </h3>
 
-          <div class="row">
-            <h3 class="title-style-1 text-center">Do your part for a greener tomorrow, recycle your devices now! <span class="title-under"></span>  </h3>
-
-            <div class="form-group col-md-12">
-              <select class="form-select" name="numOfDevices" aria-label="Default select example" required>
-                <option>Choose the amount of devices you want to recycle!</option>
-                <option value="1-4">1-4 Devices</option>
-                <option value="5+">5+ Devices</option>
+          <div class="form-group col-md-12">
+            <p>
+              <a class="btn btn-primary" href="/resources/SWR Postage Doc.pdf" target="blank" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Recycle 1-4 Devices! 
                 <br>
-              </select>
-            </div>
+                (Self-Paid Shipping)
+              </a>
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#deviceModal" aria-expanded="false" aria-controls="collapseExample">
+                Recycle 5+ Devices!
+                <br>
+                Pre-Paid Shipping
+              </button>
+            </p>
+              <!-- <div class="collapse" id="collapseExample" href="#deviceModal">
+                 <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div> 
+              </div>
             
           </div>
             
@@ -828,7 +769,7 @@
             <div class="form-group col-md-4">
               <input type="text" class="form-control" name="zipcCode" placeholder="Zip Code*">
             </div>
-           
+            -->
 
             <!-- <div class="form-group col-md-6">
               <input type="text" class="form-control" name="lastName" placeholder="Last name*">
@@ -847,22 +788,84 @@
               <h5>No Printer? No problem! <a href="#" data-toggle="modal" data-target="#contactModal">CONTACT US</a> to receive a label via mail.</h5>
             </div>
 
-          </div> -->
+          </div> 
 
           <div class="row">
 
             <div class="form-group col-sm-12">
               <button type="submit" class="btn btn-primary pull-right" name="submit" >Request Shipping Label</button>
             </div>
-
+          -->
           </div>
 
-        </form>
+    
         
       </div>
     </div>
       
   </div>
+
+  <!-- 5 or more Devices -->
+  <div class="modal fade" id="deviceModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="donateModalLabel">Recycle 5 or More Devices</h4>
+        </div>
+        <div class="modal-body">
+
+          <form action="https://formspree.io/f/mjvzroge" method="POST">
+            <div class="row">
+              <h3 class="title-style-1 text-center">Do your part for a greener tomorrow, recycle your devices now! <span class="title-under"></span>  </h3>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="name" placeholder="Full Name*" required>
+              </div>
+              
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="email" placeholder="Email*" required>
+              </div>
+    
+              
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control" name="address" placeholder="Address*">
+              </div>
+    
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control" name="city" placeholder="City*">
+              </div>
+    
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control" name="state" placeholder="State*">
+              </div>
+    
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control" name="zipcCode" placeholder="Zip Code*">
+              </div>
+    
+              <!-- <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="lastName" placeholder="Last name*">
+              </div> -->
+            </div> 
+    
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="email" placeholder="Email*">
+              </div>
+            </div> 
+            <div class="row">
+    
+              <div class="form-group col-sm-12">
+                <button type="submit" class="btn btn-primary pull-right" name="submit" >Request Shipping Label</button>
+              </div>
+            
+            </div>
+        
+            </div>
+          </form>
+    
+        </div>
 
   <!--  Scripts   -->
 
