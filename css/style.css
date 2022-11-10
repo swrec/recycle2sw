@@ -15,6 +15,7 @@ h4 {
 a {
   color: inherit;
 }
+
 a:hover, a:focus, a:active {
   color: inherit;
 }
@@ -35,12 +36,15 @@ a:hover, a:focus, a:active {
   font-size: 12px;
   padding: 3px 0;
 }
+
 .navbar-top .list-inline {
   margin-bottom: 0;
 }
+
 .navbar-top .header-contact li {
   margin-right: 15px;
 }
+
 .navbar-top .header-contact li .fa {
   margin-right: 5px;
 }
@@ -50,9 +54,11 @@ a:hover, a:focus, a:active {
   color: #333;
   background: beige;
 }
+
 .navbar-main .navbar-brand {
   border-bottom: none !important;
 }
+
 .navbar-main a:hover,
 .navbar-main a:active,
 .navbar-main a:focus,
@@ -61,6 +67,7 @@ a:hover, a:focus, a:active {
   color: inherit;
   border-bottom: 2px solid #fff;
 }
+
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
@@ -75,9 +82,11 @@ a:hover, a:focus, a:active {
   -webkit-transition: all, 0.05s;
   transition: all, 0.05s;
 }
+
 .navbar-main .submenu li {
   border-top: 1px solid beige;
 }
+
 .navbar-main .submenu li:hover {
   background: beige;
   -moz-transition: all, 0.3s;
@@ -85,6 +94,7 @@ a:hover, a:focus, a:active {
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+
 .navbar-main .submenu li a {
   width: 100%;
   border-bottom: none;
@@ -93,12 +103,14 @@ a:hover, a:focus, a:active {
   display: block;
   font-size: 16px;
 }
+
 .navbar-main li a {
   font-family: "Dosis", sans-serif;
   font-size: 18px;
   padding: 20px 15px;
   border-bottom: 2px solid transparent;
 }
+
 .navbar-main li:hover .submenu {
   top: 62px;
   visibility: visible;
@@ -107,6 +119,7 @@ a:hover, a:focus, a:active {
   -webkit-transition: all, 0.25s;
   transition: all, 0.25s;
 }
+
 .navbar-main .icon-bar {
   background: #fff;
 }
@@ -116,6 +129,7 @@ a:hover, a:focus, a:active {
 .carousel-home img {
   width: 100%;
 }
+
 .carousel-home .carousel-control {
   background: #1f76bd;
   height: 80px;
@@ -127,18 +141,22 @@ a:hover, a:focus, a:active {
   -webkit-transition: width, 0.3s;
   transition: width, 0.3s;
 }
+
 .carousel-home .carousel-control .fa {
   font-size: 2.5em;
   padding-top: 12px;
 }
+
 .carousel-home .carousel-control:hover {
   width: 50px;
 }
+
 .carousel-home .carousel-caption {
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
 }
+
 .carousel-home .carousel-title {
   color: #fff;
   font-family: "Dosis", sans-serif;
@@ -146,10 +164,12 @@ a:hover, a:focus, a:active {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .carousel-home .carousel-subtitle {
   font-size: 25px;
   text-transform: uppercase;
 }
+
 .carousel-home .btn {
   margin-top: 30px;
 }
@@ -157,6 +177,7 @@ a:hover, a:focus, a:active {
 .section-home {
   margin: 30px 0;
 }
+
 /* Logo */
 .jumbotron{
   text-align:center;
@@ -174,6 +195,7 @@ a:hover, a:focus, a:active {
 ================================= */
 .about-us {
   margin: 30px 0;
+  border: 2px, rgb(7, 6, 6)
 }
 
 .about-us-col {
@@ -192,6 +214,7 @@ a:hover, a:focus, a:active {
 }
 .about-us-col .col-icon-wrapper {
   min-height: 80px;
+  border: 2px #030303;
 }
 .about-us-col .col-title {
   text-transform: uppercase;
@@ -277,49 +300,71 @@ a:hover, a:focus, a:active {
   background: rgb(240, 232, 198);
   color: #333;
 }
+
 .main-footer .footer-main {
   padding: 30px 0;
 }
+
 .main-footer .footer-title {
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 25px;
+  
 }
+
 .main-footer .footer-title .title-under {
   background: #fff;
   margin: 15px 0;
   text-align: left;
 }
+
 .main-footer .footer-title .title-under:after {
   margin: 0;
   background: #fff;
 }
+
 .main-footer .footer-content {
-  text-align: justify;
+  text-align: center;
   font-size: 13px;
 }
-.main-footer .tweet {
-  font-size: 13px;
+
+#why-us{
+  font-size: 16px;
+  padding:25px 100px 10px 100px;
 }
-.main-footer .tweet:after {
-  content: "";
-  height: 1px;
-  display: block;
-  background: #115c9b;
-  width: 150px;
-  margin: 15px auto;
+
+.why-reasons{
+  float: left;
+  width: 27%;
+  margin-bottom: 16px;
+  padding: 10px 8px;
+  text-size-adjust: 14px;
+  font-weight: lighter;
 }
-.main-footer .tweet:last-child:after {
-  display: none;
+
+#image{
+  float: left;
+}
+
+.footer-why-us{
+  border-radius: 25px;
+  border: 2px solid #030303;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  
 }
 
 .footer-bottom {
   background: beige;
-  padding: 3px;
+  text-size-adjust: 3px;
 }
 
 .footer-form .form-group {
   margin-bottom: 5px;
 }
+
 .footer-form .form-control {
   background: rgb(217, 214, 214);
   color: #fff;
@@ -329,6 +374,7 @@ a:hover, a:focus, a:active {
   border: 1px solid #fff;
   resize: none;
 }
+
 .footer-form .btn-submit {
   border-radius: 0;
   background: beige;
@@ -339,21 +385,26 @@ a:hover, a:focus, a:active {
   -webkit-transition: all, 0.5s;
   transition: all, 0.5s;
 }
+
 .footer-form .btn-submit:hover {
   background: rgb(217, 214, 214);
 }
+
 .footer-form input:-moz-placeholder,
 .footer-form textarea:-moz-placeholder {
   color: #333;
 }
+
 .footer-form input::-moz-placeholder,
 .footer-form textarea::-moz-placeholder {
   color: #333;
 }
+
 .footer-form input:-ms-input-placeholder,
 .footer-form textarea:-ms-input-placeholder {
   color: #333;
 }
+
 .footer-form input::-webkit-input-placeholder,
 .footer-form textarea::-webkit-input-placeholder {
   color: #333;
@@ -384,16 +435,19 @@ form .alert {
   border: 2px solid #333;
   color:rgb(7, 6, 6);
   border-radius: 25px;
-  padding: 10px 25px;
-  border: 1px solid transparent;
+  padding: 10px 50px;
+  border: px solid transparent;
   font-size: 25px;
   animation: blinker 1s linear infinite;
-  @keyframes blinker {
+  @keyframes .recycleBTN {
     50% {
       opacity: 0;
     }
+ 
   }
+
 }
+
 .btn-primary {
   border-radius: 25px;
   background: whitesmoke;
@@ -407,10 +461,11 @@ form .alert {
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+
 .btn-primary:hover {
   background: beige;
   color: #333;
-  border: 1px solid #333;
+  border: 2px solid #333;
 }
 
 .btn-secondary {
@@ -418,6 +473,7 @@ form .alert {
   color: #333;
   border-radius: 0;
 }
+
 .btn-secondary:hover {
   background: beige;
   color: #333;
@@ -436,10 +492,12 @@ form .alert {
   font-size: 26px;
   margin-bottom: 25px;
 }
+
 .title-style-2 .title-under {
   display: block;
   margin: 5px 0;
 }
+
 .title-style-2 .title-under:after {
   margin: 0;
   margin-top: 10px;
@@ -469,7 +527,11 @@ form .alert {
   box-shadow: none;
 }
 
-/* Tabeles
+.modal-title{
+  text-align: center;
+}
+
+/* Tabele
 ================================= */
 .table-style-1 thead {
   background: #1f76bd;
@@ -758,6 +820,25 @@ form .alert {
   .col-form {
     margin-bottom: 25px;
   }
+
+  /* .why-reasons{
+    float: left;
+    width: 27%;
+    margin-bottom: 16px;
+    padding: 5px 8px;
+    text-size-adjust: 14px;
+    font-weight: lighter;
+  }
+
+  .footer-why-us{
+    border-radius: 10px;
+    border: 2px solid #030303;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    
+  } */
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
