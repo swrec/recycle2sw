@@ -748,6 +748,25 @@ form .alert {
   .footer-col {
     margin-bottom: 50px;
   }
+
+  .why-reasons{
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 5px 10px 5px;
+    text-size-adjust: 14px;
+    font-weight: lighter;
+  }
+
+  .footer-why-us{
+    border-radius: 10px;
+    border: 2px solid #030303;
+    padding: 5px 25px 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    
+  } 
 }
 /* Small devices (tablets, 768px and Down) */
 @media (max-width: 768px) {
@@ -821,11 +840,11 @@ form .alert {
     margin-bottom: 25px;
   }
 
-  /* .why-reasons{
+  .why-reasons{
     float: left;
-    width: 27%;
+    width: 23%;
     margin-bottom: 16px;
-    padding: 5px 8px;
+    padding: 0px 5px 10px;
     text-size-adjust: 14px;
     font-weight: lighter;
   }
@@ -833,12 +852,12 @@ form .alert {
   .footer-why-us{
     border-radius: 10px;
     border: 2px solid #030303;
-    padding: 5px;
+    padding: 10px 30px 5px;
     width: auto;
     height: auto;
     text-align: center;
     
-  } */
+  } 
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
@@ -853,6 +872,25 @@ form .alert {
   .carousel-home .carousel-indicators {
     bottom: 0;
   }
+
+  .why-reasons{
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0px 5px 10px;
+    text-size-adjust: 14px;
+    font-weight: lighter;
+  }
+
+  .footer-why-us{
+    border-radius: 10px;
+    border: 2px solid #030303;
+    padding: 10px 30px 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    
+  } 
 }
 /* =============================================================================
 	Animations
