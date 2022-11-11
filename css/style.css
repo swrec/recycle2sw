@@ -840,6 +840,10 @@ form .alert {
     margin-bottom: 25px;
   }
 
+  #why-us{
+    padding: 5px 5px 5px;
+  }
+
   .why-reasons{
     float: left;
     width: 23%;
@@ -873,9 +877,13 @@ form .alert {
     bottom: 0;
   }
 
+  #why-us{
+    padding: 5px 5px 5px;
+  }
+
   .why-reasons{
     float: left;
-    width: 30%;
+    width: 35%;
     margin-bottom: 16px;
     padding: 0px 5px 10px;
     text-size-adjust: 14px;
