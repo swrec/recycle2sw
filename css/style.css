@@ -294,6 +294,7 @@ a {
 ================================= */
 .footer-bottom {
   background: #424242;
+  margin-top: 32px;
   height: 30px;
   color: #F2F2F2;
 }
