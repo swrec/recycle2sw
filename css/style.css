@@ -884,6 +884,39 @@ form .alert {
   } 
  
 }
+
+@media (max-width: 390px) {
+  .section-landing{
+    height: 70%;
+  }
+  .recycleBTN{
+    position: absolute;
+    left: 10%;
+    bottom: 28.5%;
+  }
+
+  #why-us{
+    padding: 5px 5px 5px;
+  }
+
+  .why-reasons{
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    text-size-adjust: 14px;
+    font-weight: lighter;
+  }
+
+  .why-us{
+    border-radius: 10px;
+    border: 2px solid #030303;
+    padding: 5px 26px 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+  } 
+ 
+}
 /* =============================================================================
 	Animations
 ========================================================================== */
