@@ -1,24 +1,27 @@
 body {
-  font-family: "Open sans", sans-serif;
-  color: #333;
-  /* background-image: "/images/background.jpeg"; */
+  font-family: Roboto normal/regular;
+  color: #222222;
   background-color: whitesmoke;
 }
 
-h1,
+h1{
+  font-family: Montserrat Extra Bold;
+}
+
 h2,
 h3,
 h4 {
-  font-family: "Dosis", sans-serif;
+  font-family: Montserrat Extra Bold;
 }
 
 a {
+  font-family: Roboto bold/semi-bold;
   color: inherit;
 }
 
-a:hover, a:focus, a:active {
+/* a:hover, a:focus, a:active {
   color: inherit;
-}
+} */
 
 /* =============================================================================
   Layout
@@ -32,7 +35,6 @@ a:hover, a:focus, a:active {
 }
 
 .navbar-top {
-  background: beige;
   font-size: 12px;
   padding: 3px 0;
 }
@@ -52,21 +54,14 @@ a:hover, a:focus, a:active {
 .navbar-main {
   margin-bottom: 0;
   color: #333;
-  background: beige;
+  background: #F2F2F2;
+  font-family: Roboto bold/semi-bold;
 }
 
 .navbar-main .navbar-brand {
   border-bottom: none !important;
 }
 
-.navbar-main a:hover,
-.navbar-main a:active,
-.navbar-main a:focus,
-.navbar-main a.is-active {
-  background: none !important;
-  color: inherit;
-  border-bottom: 2px solid #fff;
-}
 
 .navbar-main .submenu {
   position: absolute;
@@ -126,7 +121,7 @@ a:hover, a:focus, a:active {
 
 /* Home Slider 
 ================================= */
-.carousel-home img {
+/* .carousel-home img {
   width: 100%;
 }
 
@@ -172,30 +167,40 @@ a:hover, a:focus, a:active {
 
 .carousel-home .btn {
   margin-top: 30px;
-}
+} */
 
+/* Landing */
 .section-home {
   margin: 30px 0;
 }
 
-/* Logo */
-.jumbotron{
-  text-align:center;
-  background-image: url("/images/logo-no-background.png");
-  background-size: cover;
-  height: 30%;
-  background-repeat: no-repeat;
-  background-size: 95% 85%;
-  background-color: whitesmoke;
-  
+.section-landing{
+  background-color: #3C91E6;
+  font-family: Roboto bold/semi-bold;
+  color: #FFFFFF;
 }
 
+.landing{
+  width: 50%;
+  height: 30%;
+}
+
+/* Jumbotron */
+.jumbotron{
+  text-align:left;
+  height: 30%;
+  background-color: #3C91E6;
+  margin: auto;
+  color: #FFFFFF;
+} 
+.jumbo-header, .jumbo-sub
 
 /* home/ Tiles 
 ================================= */
-.about-us {
+.section-home about-us fadeIn animated {
   margin: 30px 0;
-  border: 2px, rgb(7, 6, 6)
+  border: 2px, rgb(7, 6, 6);
+  background-color: #E9e9e9;
 }
 
 .about-us-col {
@@ -203,31 +208,29 @@ a:hover, a:focus, a:active {
   height: 325px;
   padding: 25px;
   text-align: center;
-  background-color: beige;
   /* background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMjgwODE0IiB5MT0iLTAuMTAyMjA4IiB4Mj0iMC43MTkxODYiIHkyPSIxLjEwMjIwOCI+PHN0b3Agb2Zmc2V0PSItMjUlIiBzdG9wLWNvbG9yPSIjMTE1YjliIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMxMjkwZjgiLz48c3RvcCBvZmZzZXQ9IjEyNSUiIHN0b3AtY29sb3I9IiMxMTViOWIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); */
   background-size: 100%;
-  background-color: #60d5c4;
+  background-color: #F2F2F2;
   /* background-image: -moz-linear-gradient(290deg, rgb(16, 218, 16) -25%, rgb(56, 231, 56) 50%, rgb(153, 232, 153) 125%);
   background-image: -webkit-linear-gradient(290deg, rgb(16, 218, 16) -25%, rgb(56, 231, 56) 50%, rgb(153, 232, 153) 125%);
   background-image: linear-gradient(160deg, rgb(16, 218, 16) -25%,  rgb(56, 231, 56) 50%, rgb(153, 232, 153) 125%); */
-  color: rgb(14, 13, 13);
 }
 .about-us-col .col-icon-wrapper {
-  min-height: 80px;
+  min-height: 50px;
   border: 2px #030303;
 }
-.about-us-col .col-title {
+/* .about-us-col .col-title {
   text-transform: uppercase;
-}
+} */
 .about-us-col .col-details {
   text-align: center;
   margin-bottom: 25px;
-  min-height: 80px;
+  min-height: 50px;
 }
 
 /* home/reasons 
 ================================= */
-.home-reasons {
+/* .home-reasons {
   margin: 25px 0;
 }
 
@@ -286,44 +289,50 @@ a:hover, a:focus, a:active {
   -moz-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
   -webkit-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
   transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
-}
+} */
 
 /* footer 
 ================================= */
-.footer-top {
-  background: beige;
-  height: 40px;
-  
+.footer-bottom {
+  background: #424242;
+  height: 30px;
+  color: #F2F2F2;
 }
 
-.main-footer {
-  background: rgb(240, 232, 198);
-  color: #333;
+/* about */
+.section-home {
+  background: #E9E9E9;
+  color: #424242;
+  height: 75%;
 }
 
-.main-footer .footer-main {
+.about-main{
+  background-color: #3C91E6;
+  color: #FFFF;
+}
+.main-about .footer-main {
   padding: 30px 0;
 }
 
-.main-footer .footer-title {
+.main-about .about-title {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 25px;
   
 }
 
-.main-footer .footer-title .title-under {
-  background: #fff;
+.main-about .about-title .title-under {
+  background: #E9E9E9;
   margin: 15px 0;
   text-align: left;
 }
 
-.main-footer .footer-title .title-under:after {
+.main-about .about-title .title-under:after {
   margin: 0;
-  background: #fff;
+  background: #E9E9E9;
 }
 
-.main-footer .footer-content {
+.main-about .about-content {
   text-align: center;
   font-size: 13px;
 }
@@ -348,7 +357,7 @@ a:hover, a:focus, a:active {
  
 }
 
-.footer-why-us{
+.about-why-us{
   border-radius: 25px;
   border: 2px solid #030303;
   width: auto;
@@ -357,16 +366,16 @@ a:hover, a:focus, a:active {
 
 }
 
-.footer-bottom {
-  background: beige;
+.about-bottom {
+  background: E9E9E9;
   text-size-adjust: 3px;
 }
 
-.footer-form .form-group {
+.about-form .form-group {
   margin-bottom: 5px;
 }
 
-.footer-form .form-control {
+.about-form .form-control {
   background: rgb(217, 214, 214);
   color: #fff;
   border: 0;
@@ -376,7 +385,7 @@ a:hover, a:focus, a:active {
   resize: none;
 }
 
-.footer-form .btn-submit {
+.about-form .btn-submit {
   border-radius: 0;
   background: beige;
   text-transform: uppercase;
@@ -387,7 +396,7 @@ a:hover, a:focus, a:active {
   transition: all, 0.5s;
 }
 
-.footer-form .btn-submit:hover {
+.about-form .btn-submit:hover {
   background: rgb(217, 214, 214);
 }
 
@@ -432,52 +441,35 @@ form .alert {
 ========================================================================== */
 .recycleBTN{
   border-radius: 25px;
-  background: yellow;
+  background: #93E22F;
   border: 2px solid #333;
   color:rgb(7, 6, 6);
   border-radius: 25px;
   padding: 10px 50px;
   border: px solid transparent;
   font-size: 25px;
-  animation: blinker 1s linear infinite;
-  @keyframes .recycleBTN {
-    50% {
-      opacity: 0;
-    }
- 
-  }
 
 }
 
 .btn-primary {
+  font-family: Roboto bold/semi-bold;
   border-radius: 25px;
-  background: whitesmoke;
+  background: #3C91E6;
   border: 2px solid #333;
-  color:#333;
+  color:#FFFFFF;
   border-radius: 25px;
   padding: 10px 25px;
   border: 1px solid transparent;
-  -moz-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
-
-.btn-primary:hover {
-  background: beige;
-  color: #333;
-  border: 2px solid #333;
 }
 
 .btn-secondary {
-  background: beige;
-  color: #333;
   border-radius: 0;
+  font-family: inherit
 }
 
 .btn-secondary:hover {
   background: beige;
-  color: #333;
+  color: #FFFFFF;
 }
 
 .title-style-1 {
@@ -530,9 +522,11 @@ form .alert {
 
 .modal-title{
   text-align: center;
+  color: #FFFFFF;
+  background-color: #3C91E6;
 }
 
-/* Tabele
+/* Table
 ================================= */
 .table-style-1 thead {
   background: #1f76bd;
@@ -604,10 +598,11 @@ form .alert {
 .modal .modal-content {
   border-radius: 0;
 }
+
 .modal .modal-header {
-  background: beige;
-  color: #333;
+  background: #3C91E6;
 }
+
 .modal .modal-header .close {
   font-style: 26px;
 }
@@ -683,7 +678,7 @@ form .alert {
 
 /* Ow carousel
 ================================= */
-.owl-next,
+/* .owl-next,
 .owl-prev {
   width: 32px;
   height: 32px;
@@ -711,7 +706,7 @@ form .alert {
 .owl-next {
   left: auto;
   right: 0;
-}
+} */
 
 /* =============================================================================
 	Responsive

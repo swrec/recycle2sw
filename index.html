@@ -98,10 +98,10 @@
           <div id="navbar" class="navbar-collapse collapse pull-right">
 
             <ul class="nav navbar-nav">
-
-              <!-- <li><a class="is-active" href="index.html">HOME</a></li> -->
-              <li><a href="#" data-toggle="modal" data-target="#aboutModal">ABOUT US</a></li>
-              <!-- <li><a href="#" data-toggle="modal" data-target="#contactModal">CONTACT</a></li> -->
+              <li><a href="#" data-toggle="modal" data-target="#aboutModal">Why Us</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#aboutModal">How It Works</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#resetModal">Reset Device</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#contactModal">Contact</a></li>
         
             </ul>
 
@@ -197,24 +197,42 @@
 
   </div> -->
 
-  <!-- Image -->
+  <!--Jumbotron/header -->
+ <section class="section-landing">
   <div class="container">
-    <div class="jumbotron jumbotron-fluid">
-      <!-- <h1>
-        Sustainable World Recycling
-      </h1>
-          
-      <p>Recycle today for a better tomorrow.</p> 
-      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> RECYCLE NOW</a> -->
+    
+    <div class="landing">
+        <h1 class="col-title">Do Your Part For A Greener Tomorrow</h1>
+      <div class="col-details">
+        <br>
+        <p>Do your part for a greener tomorrow, donate and recycle your phones and electronic devices now!</p>
+        
+      </div>
     </div>
+    <div class="btn-holder text-left">
+
+  <button type="button" class="recycleBTN" data-toggle="modal" data-target="#alertModal"> RECYCLE NOW</button>
+
+  </div> 
   </div>
+ </section>
+  <!-- <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+     <h1 id="Jumbo-Header">Do your part for a greener tomorrow, donate and recycle your phones and electronic devices now!</h1>
+
+     <h3 id="Jumbo-sub">Our focus is to be at the forefront of this fight so we can be the shining example of environmental responsibility in hopes that it will be a call to action to evervone in helping in the reduction of e-waste.</h3>
+
+     <button type="button" class="recycleBTN" data-toggle="modal" data-target="#alertModal"> RECYCLE NOW</button>
+    </div>
+    
+  </div> -->
 
   <!-- TILES -->
-  <div class="section-home about-us fadeIn animated">
+  <section class="section-home about-us fadeIn animated">
 
     <div class="container">
 
-      <div class="row">
+      <div class="row-about">
 
         <div class="col-md-4 col-sm-6">
         
@@ -223,13 +241,13 @@
             <div class="col-icon-wrapper">
               <img src="icons/reset-icon.png" alt="">
             </div>
-            <h3 class="col-title">How to Recycle Device</h3>
+            <h3 class="col-title">How to Recycle</h3>
             <div class="col-details ">
 
               <p>Learn ways to recycle your phone!</p>
               
             </div>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#howToModal">Recycle Your Device!</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#howToModal">Get Started</a>
             
           </div>
           
@@ -243,18 +261,17 @@
             <div class="col-icon-wrapper">
               <img src="icons/computer-icon.png" alt="">
             </div>
-            <h3 class="col-title">How To Reset Your Device </h3>
+            <h3 class="col-title">How To Reset Device </h3>
             <div class="col-details">
 
               <p>Learn how to reset your device!</p>
               
             </div>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#resetModal">How To Reset Your Device!</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#resetModal">Reset Device</a>
             
           </div>
           
         </div>
-
 
         <div class="col-md-4 col-sm-6">
         
@@ -263,23 +280,22 @@
             <div class="col-icon-wrapper">
               <img src="icons/email-icon.png" alt="">
             </div>
-            <h3 class="col-title">Contact US</h3>
+            <h3 class="col-title">Contact Us</h3>
             <div class="col-details">
 
               <p>Have any questions? Contact us!</p>
               
             </div>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact</a>
             
           </div>
           
         </div>
-        
 
       </div>
 
     </div>
-  </div>
+  </section>
 
   <!--  Sponsers -->
   <!-- <div class="section-home our-sponsors animate-onscroll fadeIn">
@@ -301,84 +317,76 @@
       </div>
 
   </div> -->
-  <div class="btn-holder text-center">
+ 
 
-  <button type="button" class="recycleBTN" data-toggle="modal" data-target="#alertModal"> RECYCLE NOW</button>
+  <section class="about-main">
+    <div class="container">
 
-  </div>
+      <div class="row">
+    
+        <div class="about-why-us">
 
-  
+          <h4 class="about-title"><b>Why Sustainable World?</b><span class="title-under"></span></h4>
+
+          <div class="about-content-why">
+
+            <p id="why-us">
+              Our focus is to be at the forefront of this fight so we can be the shining example of environmental responsibility in hopes that it will be a call to action to everyone in helping in the reduction of e-waste. We also offer:
+            </p>
+
+            <div class="row">
+            
+                <div class="col-icon-wrapper-why">
+                  <div class="col-6">
+
+                    <div class="why-reasons">
+                      <img src="/icons/sust.png" id="image">
+                      Providing thoughtful solutions of repurposing /recycling devices from years of experience
+                    </div>
+                  
+                  </div>
+
+                  <div class="col">
+                    <div class="why-reasons">
+                      <img src="/icons/check.png" id="image">
+                      Easy and convenient. We also provide you a free prepaid shipping label if you recycle 5 or more devices
+                    </div>
+                  </div>
+
+                   <div class="col">
+                    <div class="why-reasons">
+                      <img src="/icons/recycle.png" id="image">
+                      Also, by support Sustainable World and the greener tomorrow for our planet, you are supporting organizations we believe in the make a meaningful impact across the world
+                    </div>
+                   </div>
+                </div>
+              </div>
+
+            </div>   
+
+          </div>
+            
+        </div>
+
+      </div>
+
+    </div> 
+
+  </section> 
   
   <!-- main-footer -->
   <footer class="main-footer">
 
-    <div class="footer-top"></div>
-
-    <div class="footer-main">
-      <div class="container">
-
-        <div class="row">
-      
-          <div class="footer-why-us">
-
-            <h4 class="footer-title"><b>Why Sustainable World?</b><span class="title-under"></span></h4>
-
-            <div class="footer-content-why">
-
-              <p id="why-us">
-                Our focus is to be at the forefront of this fight so we can be the shining example of environmental responsibility in hopes that it will be a call to action to everyone in helping in the reduction of e-waste. We also offer:
-              </p>
-
-              <div class="row">
-              
-                  <div class="col-icon-wrapper-why">
-                    <div class="col-6">
-
-                      <div class="why-reasons">
-                        <img src="/icons/sust.png" id="image">
-                        Providing thoughtful solutions of repurposing /recycling devices from years of experience
-                      </div>
-                    
-                    </div>
-  
-                    <div class="col">
-                      <div class="why-reasons">
-                        <img src="/icons/check.png" id="image">
-                        Easy and convenient. We also provide you a free prepaid shipping label if you recycle 5 or more devices
-                      </div>
-                    </div>
-
-                     <div class="col">
-                      <div class="why-reasons">
-                        <img src="/icons/recycle.png" id="image">
-                        Also, by support Sustainable World and the greener tomorrow for our planet, you are supporting organizations we believe in the make a meaningful impact across the world
-                      </div>
-                     </div>
-                  </div>
-                </div>
-
-                
-
-              </div>   
-
-            </div>
-              
-          </div>
-
-          
-
-        </div>
-
-      </div> 
-
-    </div> 
+    <!-- <div class="footer-top"></div> -->
 
   <div class="clearfix"></div>
 
     <div class="footer-bottom">
 
       <div class="container text-center">
-        Sustainable World Recycling @ copyrights 2022 - by JDEnterprise
+        Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a>
+          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>
+        | Sustainable World Recycling @ copyrights 2022 - by JDEnterprise
       </div>
     </div>
     
