@@ -1,27 +1,24 @@
 body {
-  font-family: Roboto normal/regular;
+  font-family: Roboto normal/regular !important;
   color: #222222;
-  background-color: whitesmoke;
+  font-size: 18px;
 }
 
-h1{
-  font-family: Montserrat Extra Bold;
-}
-
+h1, 
 h2,
 h3,
 h4 {
-  font-family: Montserrat Extra Bold;
+  /* font-family: Montserrat Extra Bold !important; */
 }
 
 a {
-  font-family: Roboto bold/semi-bold;
-  color:#030303
+  font-family: Roboto bold/semi-bold !important;
+  color:#030303 !important;
 }
 
-/* a:hover, a:focus, a:active {
+a:hover, a:focus, a:active {
   color: inherit;
-} */
+} 
 
 /* =============================================================================
   Layout
@@ -31,8 +28,8 @@ a {
 .navbar-static-top {
   margin: 0;
   border: 0;
-  color: 333;
-}
+  
+} 
 
 .navbar-top {
   font-size: 12px;
@@ -51,22 +48,24 @@ a {
   margin-right: 5px;
 }
 
-.navbar-main {
-  margin-bottom: 0;
-  color: #333;
-  background: #F2F2F2;
-  font-family: Roboto bold/semi-bold;
+.navbar-main{
+  font-family: Roboto bold/semi-bold !important;
+  color: #333 !important;
+  background: #F2F2F2 !important;
+  height: 55px;
+}
+
+.navbar-main container{
+  text-align: right;
 }
 
 .navbar-main .navbar-brand {
   border-bottom: none !important;
 }
 
-
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
-  background: beige;
   padding: 0;
   width: 150px;
   left: -35px;
@@ -83,7 +82,6 @@ a {
 }
 
 .navbar-main .submenu li:hover {
-  background: beige;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   -webkit-transition: all, 0.3s;
@@ -100,7 +98,6 @@ a {
 }
 
 .navbar-main li a {
-  font-family: "Dosis", sans-serif;
   font-size: 18px;
   padding: 20px 15px;
   border-bottom: 2px solid transparent;
@@ -113,377 +110,224 @@ a {
   -o-transition: all, 0.25s;
   -webkit-transition: all, 0.25s;
   transition: all, 0.25s;
+  color: #FFFFFF;
 }
 
 .navbar-main .icon-bar {
-  background: #fff;
+  background: #000000;
 }
 
-/* Home Slider 
-================================= */
-/* .carousel-home img {
-  width: 100%;
-}
+/*LANDING*/
 
-.carousel-home .carousel-control {
-  background: #1f76bd;
-  height: 80px;
-  width: 40px;
-  top: 50%;
-  margin-top: -40px;
-  -moz-transition: width, 0.3s;
-  -o-transition: width, 0.3s;
-  -webkit-transition: width, 0.3s;
-  transition: width, 0.3s;
-}
-
-.carousel-home .carousel-control .fa {
-  font-size: 2.5em;
-  padding-top: 12px;
-}
-
-.carousel-home .carousel-control:hover {
-  width: 50px;
-}
-
-.carousel-home .carousel-caption {
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-50%);
-}
-
-.carousel-home .carousel-title {
-  color: #fff;
-  font-family: "Dosis", sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.carousel-home .carousel-subtitle {
-  font-size: 25px;
-  text-transform: uppercase;
-}
-
-.carousel-home .btn {
-  margin-top: 30px;
-} */
-
-/* Landing */
-/* .section-home { */
-  /* margin: 30px 0; */
-/* } */
-
-.section-landing{
-  padding: 35px;
+#section-landing{
+  padding: 25px;
   background-color: #3C91E6;
-  font-family: Roboto bold/semi-bold;
   color: #FFFFFF;
+  text-align: center;
+  height: 40%;
 }
 
 .landing{
-  width: 40%;
-  height: 30%;
-}
-
-/* Jumbotron */
-.jumbotron{
-  text-align:left;
-  height: 35%;
-  background-color: #3C91E6;
-  margin: auto;
-  color: #FFFFFF;
+  margin-left: 25%;
+  margin-right: 25%;
 } 
-/* .jumbo-header, .jumbo-sub */
 
-/* home/ Tiles 
-================================= */
-.section-home about-us fadeIn animated {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  /* border: 2px, rgb(7, 6, 6); */
-  height: 100%;
+
+.toolbar{
+  position: absolute;
+  top: 30%;
+  right: 38%;
+
+}
+/* WHY US */
+#why-us{
+  text-align: center;
+  background-color: #E9E9E9;
+  height: 40%;
+  padding: 25px 25px 25px 25px;
+  font-size: 16px;
 }
 
-.about-us-col {
+#why-us h2{
+  /* font-family: Roboto Extra Bold; */
+  font-size: 40px;
+  padding: 0 0 25px 0;
+}
+
+#why-us p{
+  margin-left: 20%;
+  margin-right: 15%;
+  text-align: left;
+  
+}
+
+/* HOW IT WORKS */
+.howTo-Title{
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.howTo-col .col-icon-wrapper{
+  padding-top: 5%;
+  min-height: 50px;
+}
+.section-home howTo fadeIn animated {
+  /* margin-top: 30px; */
+  margin-bottom: 30px;
+  /* height: 60%; */
+  
+}
+
+#howTo{
+  background-color: #3C91E6;
+  height:85%;
+  
+}
+
+.howTo-Title{
+  font-size: 40px;
+}
+
+.howTo-col {
   border-radius: 25px;
-  height: 280px;
+  height: 70%;
   text-align: center;
   background-color: #F2F2F2;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 16px;
+  width: 100%; 
+  column-gap: 500px;
 }
 
-.about-us-col .col-icon-wrapper {
+.howTo-col .col-details {
+  text-align: left;
+  margin-bottom: 25px;
   min-height: 50px;
+  padding: 10px 10px 15px 10px; 
 }
-/* .about-us-col .col-title {
-  text-transform: uppercase;
-} */
 
-.about-us-col .col-details {
+img{
+  height: 70px;
+}
+/* RESET DEVICE */
+
+.resetDevice-Title{
+  text-align: center;
+  padding-top: 25px;
+  font-size: 40px;
+}
+.section-home resetDevice fadeIn animated {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 15%;
+  margin-right: 80%;
+}
+
+#resetDevice{
+  background-color: #E9E9E9;
+  height: 80%;
+}
+
+.resetDevice-col {
+  border-radius: 25px;
+  height: 70%;
+  text-align: center;
+  background-color: #F2F2F2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-right: 60%;
+}
+
+.resetDevice-col .col-icon-wrapper {
+  min-height: 50px;
+  padding-top: 5%;
+}
+
+.resetDevice-col .col-details {
   text-align: center;
   /* margin-bottom: 25px; */
   min-height: 50px;
+  text-align: left;
+  /* padding: 10px 0px 10px; */
+  font-size: 16px;
 }
 
-/* home/reasons 
-================================= */
-/* .home-reasons {
-  margin: 25px 0;
-}
-
-.reasons-col {
-  position: relative;
-  overflow: hidden;
-}
-.reasons-col img {
-  width: 100%;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
-}
-.reasons-col .reasons-titles {
-  position: absolute;
-  bottom: 0;
+/* Contact Us */
+#contact{
+  background-color: #3C91E6;
+  color: #FFFFFF;
   text-align: center;
-  background: rgba(31, 118, 189, 0.8);
-  width: 100%;
-  color: #fff;
-  text-transform: uppercase;
-  height: 125px;
-  padding: 25px 0;
+  padding: 10px;
+  height: 225x;
 }
-.reasons-col .reasons-title {
-  font-weight: bold;
-}
-.reasons-col .on-hover {
-  position: absolute;
-  top: 0;
-  bottom: 125px;
-  width: 100%;
-  padding: 25px;
-  color: #fff;
-  text-align: justify;
-  background: rgba(31, 118, 189, 0.9);
-  border-bottom: 1px solid #fff;
-  visibility: hidden;
-  opacity: 0;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
-}
-.reasons-col:hover .on-hover {
-  visibility: visible;
-  opacity: 1;
-  padding: 50px;
-  -moz-transition: all, 1s;
-  -o-transition: all, 1s;
-  -webkit-transition: all, 1s;
-  transition: all, 1s;
-}
-.reasons-col:hover img {
-  -moz-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
-  -webkit-transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
-  transform: perspective(1.1) scale3d(1.1, 1.1, 1.1);
-} */
 
 /* footer 
 ================================= */
-.footer-bottom {
+.main-footer {
   background: #424242;
-  margin-top: 32px;
   height: 30px;
   color: #F2F2F2;
+  text-align: right;
+  font-size: 8px;
+  padding-top: 10px;
 }
 
-/* about */
-.section-home {
-  background: #E9E9E9;
-  color: #424242;
-  height: 75%;
-}
 
-.about-main{
+/* Contact Modal
+================================= */
+
+.row-send .btn-primary{
   background-color: #3C91E6;
-  color: #FFFF;
-  
-}
-
-.main-about .footer-main {
-  padding: 30px 30px;
-}
-
-.main-about .about-title {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-size: 25px;
-  
-}
-
-.main-about .about-title .title-under {
-  background: #E9E9E9;
-  margin: 15px 0;
-  text-align: left;
-}
-
-.main-about .about-title .title-under:after {
-  margin: 0;
-  background: #E9E9E9;
-}
-
-.main-about .about-content {
-  text-align: center;
-  font-size: 13px;
-}
-
-#why-us{
-  font-size: 16px;
-  padding:15px 65px 10px;
-}
-
-.why-reasons{
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0px 20px 5px;
-  text-size-adjust: 14px;
-  font-weight: lighter;
-  
-}
-
-#image{
-  float: left;
- 
-}
-
-.about-why-us{
+  color: #FFFFFF;
   border-radius: 25px;
-  border: 2px solid #030303;
-  width: auto;
-  height: auto;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
 }
-
-.about-bottom {
-  background: E9E9E9;
-  text-size-adjust: 3px;
-}
-
-.about-form .form-group {
-  margin-bottom: 5px;
-}
-
-.about-form .form-control {
-  background: rgb(217, 214, 214);
-  color: #fff;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 5px;
-  border: 1px solid #fff;
-  resize: none;
-}
-
-.about-form .btn-submit {
-  border-radius: 0;
-  background: beige;
-  text-transform: uppercase;
-  border: 1px solid #333;
-  -moz-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
-}
-
-.about-form .btn-submit:hover {
-  background: rgb(217, 214, 214);
-}
-
-.footer-form input:-moz-placeholder,
-.footer-form textarea:-moz-placeholder {
-  color: #333;
-}
-
-.footer-form input::-moz-placeholder,
-.footer-form textarea::-moz-placeholder {
-  color: #333;
-}
-
-.footer-form input:-ms-input-placeholder,
-.footer-form textarea:-ms-input-placeholder {
-  color: #333;
-}
-
-.footer-form input::-webkit-input-placeholder,
-.footer-form textarea::-webkit-input-placeholder {
-  color: #333;
-}
-
-
-
-/* contact 
-================================= */
-.contact-map {
-  height: 350px;
-  background: #ccc;
-}
-
-form .alert {
-  display: none;
-}
-
-/* Causes 
-================================= */
-
 /* =============================================================================
 	Module
 ========================================================================== */
-.recycleBTN{
-  border-radius: 25px;
-  background: #93E22F;
-  border: 2px solid #333;
-  color:rgb(7, 6, 6);
-  border-radius: 25px;
-  padding: 10px 10px;
-  border: px solid transparent;
-  font-size: 25px;
-}
 
 .btn-primary {
-  font-family: Roboto bold/semi-bold;
+  font-family: Roboto bold/semi-bold !important;
   border-radius: 25px;
   background: #3C91E6;
   border: 2px solid #333;
   color:#FFFFFF;
   border-radius: 25px;
-  padding: 10px 25px;
-  border: 1px solid transparent;
+  padding: 10px 25px 10px;
 }
 
 .recycle-btn {
+  font-family: Roboto bold/semi-bold !important;
   font-weight: bold;
-  border-radius: 25px;
   background: #93E22F;
   border: 2px solid #333;
   color:rgb(7, 6, 6);
-  border-radius: 25px;
+  border-radius: 45px !important;
   border: 1px solid transparent;
-  padding: 20px 20px;
+  /* padding: 20px 100px 20px; */
+  margin: 30px;
+  width: 45%;
+} 
+.contact-btn {
+  font-family : Roboto bold/semi-bold !important;
+  font-weight: bold !important;
+  background: #93E22F;
+  border: 2px solid #333;
+  color:rgb(7, 6, 6);
+  border-radius: 40px !important;
+  border: 1px solid transparent;
+  font-size: 16px !important;
+  width: 10%;
+  font-size: 16px;
 } 
 
 .btn-secondary {
   border-radius: 0;
   font-family: inherit
-}
-
-.btn-secondary:hover {
-  background: beige;
-  color: #FFFFFF;
 }
 
 .title-style-1 {
@@ -539,45 +383,21 @@ form .alert {
   text-align: center;
   color: #FFFFFF;
   background-color: #3C91E6;
+  font-size: 24px;
 }
 
-/* Table
-================================= */
-.table-style-1 thead {
-  background: #1f76bd;
-  border-bottom: 1px solid #144d7b;
-  color: #fff;
-}
-.table-style-1 td,
-.table-style-1 th {
-  border-bottom: 1px solid #1f76bd;
-}
-
-.table-style-2 thead {
-  background: #115c9b;
-  border-bottom: 1px solid #144d7b;
-  color: #fff;
-}
-.table-style-2 tbody tr:nth-child(even) {
-  background: #1f76bd;
-  color: #fff;
-}
-.table-style-2 td,
-.table-style-2 th {
-  border-bottom: 1px solid #1f76bd;
-}
 
 /* Tabs
 ================================= */
 .nav-tabs {
-  border-bottom-color: #1f76bd;
+  border-bottom-color: #3C91E6;
   margin-bottom: 15px;
 }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  background: beige;
+  background: #3C91E6;
   color: #fff;
 }
 
@@ -590,7 +410,7 @@ form .alert {
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background: #115c9b;
+  background: #3C91E6;
   color: #fff;
 }
 
@@ -717,7 +537,6 @@ form .alert {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-
 .owl-next {
   left: auto;
   right: 0;
@@ -728,36 +547,53 @@ form .alert {
 ========================================================================== */
 /* Large devices (large desktops, 1200px and Down) */
 @media (max-width: 1200px) {
-  .about-us-col {
-    padding: 15px;
-  }
-
-  .reasons-col:hover .on-hover {
-    padding: 15px;
-  }
-
-  .reasons-col:hover .on-hover {
-    padding: 25px;
+  .howTo-col {
+    border-radius: 25px;
+    height: 75%;
+    text-align: center;
+    background-color: #F2F2F2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: 16px;
   }
 }
 /* Medium devices (desktops, 992px and Donw) */
 @media (max-width: 992px) {
-  .carousel-home .carousel-title {
-    font-size: 36px;
+  .howTo-col {
+    margin-bottom: 30px;
+    font-size: 14px;
+    height: 70%;
   }
-  .carousel-home .carousel-subtitle {
-    font-size: 18px;
+  #why-us h2{
+    padding: 5px;
   }
-  .carousel-home .btn {
-    margin-top: 15px;
+  #why-us p{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  padding: 0px 10px 10px;
   }
 
-  .about-us-col {
-    margin-bottom: 25px;
+  .toolbar{
+    position: absolute;
+    top: 33%;
+    right: 30%;
   }
 
-  .footer-col {
-    margin-bottom: 50px;
+  #why-us {
+    height: 55%;
+  }
+
+  #resetDevice{
+    height: 90%;
+  }
+
+  .resetDevice-col{
+    height: 75%;
+  }
+  img{
+    padding: 15px;
   }
 
   .why-reasons{
@@ -768,41 +604,11 @@ form .alert {
     font-weight: lighter;
   }
 
-  .footer-why-us{
-    border-radius: 10px;
-    border: 2px solid #030303;
-    width: auto;
-    height: auto;
-    text-align: center;
-    
-  } 
 }
 /* Small devices (tablets, 768px and Down) */
 @media (max-width: 768px) {
-  .header-contact {
-    text-align: center;
-  }
-  .header-contact li {
-    margin: 0 !important;
-  }
-
-  /* .jumbotron{
-    text-align:center;
-    background-image: url("/images/sustainable-world-recycling-high-resolution-logo-color-on-transparent-background.png");
-    background-size: cover;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: rgb(240, 232, 198);
-    
-  } */
-
-  .header-social {
-    text-align: center;
-  }
-
   .navbar-main #navbar {
-    float: none !important;
+    float: right !important;
   }
   .navbar-main #navbar a {
     border-bottom: none;
@@ -826,68 +632,105 @@ form .alert {
     background: #115c9b;
     border-top-color: #1f76bd;
   }
-
-
   
+  .landing{
+    height: 90%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .toolbar{
+    position: absolute;
+    top: 33%;
+    right: 25%;
+  }
+
   #why-us{
-    padding: 5px 10px 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+  .howTo-Title{
+    text-align: center;
+  }
+  #howTo{
+    height: auto;
   }
 
-  .why-reasons{
+  .howTo-col{
     float: left;
-    width: 33.3%;
+    width: 80%;
     text-size-adjust: 14px;
-    font-weight: lighter;
+  }
+  
+  .resetDevice-Title{
+    text-align: center;
   }
 
+  #resetDevice{
+    margin-top: 2%;
+    height: auto;
+  }
+
+  #resetDevice-col{
+    height: 100%;
+  }
   .footer-why-us{
     border-radius: 10px;
     border: 2px solid #030303;
     width: auto;
     height: auto;
     text-align: center;
-    
   } 
+
+  
 }
 /* Extra Small devices (tablets, 480px and Down) */
 @media (max-width: 480px) {
-  .section-landing{
-    height: 85%;
+  #section-landing{
+    height: auto;
   }
-  .recycleBTN{
-    position: absolute;
-    left: 10%;
-    bottom: 10%;
+
+  .landing{
+    height: auto;
+  }
+
+  .toolbar{
+    position: relative;
+    top:auto;
+    right: 12.5%;
   }
 
   #why-us{
-    padding: 5px 5px 5px;
+   height: auto;
   }
 
-  .why-reasons{
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    text-size-adjust: 14px;
-    font-weight: lighter;
+  #why-us p{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .why-us{
-    border-radius: 10px;
-    border: 2px solid #030303;
-    padding: 5px 26px 5px;
-    width: auto;
+  .howTo-col{
+    width: 100%;
     height: auto;
-    text-align: center;
-  } 
+  }
+
+  #resetDevice{
+    height: auto;
+  }
+
+  .resetDevice-col{
+    height: auto;
+  }
+
+  .contact-btn{
+    width: auto;
+  }
  
 }
 
 @media (max-width: 390px) {
-  .section-landing{
-    height: 70%;
+  .landing{
+    height: auto;
+    width: auto;
   }
   .recycleBTN{
     position: absolute;
@@ -897,14 +740,6 @@ form .alert {
 
   #why-us{
     padding: 5px 5px 5px;
-  }
-
-  .why-reasons{
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    text-size-adjust: 14px;
-    font-weight: lighter;
   }
 
   .why-us{
