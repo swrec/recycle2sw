@@ -762,7 +762,7 @@ img{
     background: #93E22F;
     position: relative;
     top:55%;
-    right: 5%;
+    left: 20%;
     border-radius: 45px;
     width:auto;
   }
@@ -771,7 +771,7 @@ img{
     /* z-index: 1001; */
     position: absolute;
     top: 120%;
-    left: 38%;
+    left: 25%;
     width: auto;
     border-radius: 45px;
   }
