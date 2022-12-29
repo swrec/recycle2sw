@@ -126,7 +126,7 @@ a:hover, a:focus, a:active {
   background-color: #3C91E6;
   color: #FFFFFF;
   text-align: center;
-  height: 40%;
+  height: 35%;
 }
 
 .landing{
@@ -135,35 +135,35 @@ a:hover, a:focus, a:active {
 } 
 
 
-/* .toolbar{
+.toolbar{
   position: absolute;
   top: 30%;
-  right: 38%;
-  
-} */
+  right: 40%;
+}
 
 .postage-btn{
-  /* z-index: 1000; */
+  /* z-index: 1000;  */
   font-weight: bold;
   background: #93E22F;
-  position: absolute;
-  top: 30%;
-  left: 35%;
-  border-radius: 100%;
-  width: 15%
+  /* position: absolute; */
+  /* top: 30%;
+  left: 35%; */
+  border-radius: 45px;
+  width: 55%;
+  margin-right: 15%;
 }
 
 .recycle-btn{
-  /* z-index: 1001; */
-  position: absolute;
-  top: 30%;
-  left: 55%;
+  /* z-index: 1001;  */
+  /* position: absolute; */
+  /* top: 30%;
+  left: 55%; */
   border-radius: 45px;
   width: 55%;
   background: #93E22F;
   color:#000000;
-  width: 15%;
 }
+
 /* WHY US */
 #why-us{
   text-align: center;
@@ -741,7 +741,7 @@ img{
 
   #section-landing{
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
 
   .landing{
@@ -749,29 +749,30 @@ img{
     width: auto;
   }
 
-  /* .toolbar{
-    position: relative;
+  .toolbar{
+    /* position: relative; */
     top:auto;
-    right: 1%;
-    width: auto;
-  } */
+    right: 40%;
+    width: 30%;
+    flex-wrap: wrap-reverse !important;
+  }
 
   .postage-btn{
     /* z-index: 1000; */
     font-weight: bold;
     background: #93E22F;
-    position: relative;
-    top:55%;
-    left: 20%;
+    /* position: relative; */
+    /* top:55%; */
+    /* left: 20%; */
     border-radius: 45px;
     width:auto;
   }
 
   .recycle-btn{
     /* z-index: 1001; */
-    position: absolute;
-    top: 120%;
-    left: 25%;
+    /* position: absolute; */
+    /* top: 120%; */
+    /* left: 25%; */
     width: auto;
     border-radius: 45px;
   }
