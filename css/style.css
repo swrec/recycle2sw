@@ -36,20 +36,6 @@ a:hover, a:focus, a:active {
   padding: 3px 0;
 }
 
-
-
-.navbar-top .list-inline {
-  margin-bottom: 0;
-}
-
-.navbar-top .header-contact li {
-  margin-right: 15px;
-}
-
-.navbar-top .header-contact li .fa {
-  margin-right: 5px;
-}
-
 .navbar-main{
   font-family: Roboto bold/semi-bold !important;
   color: #333 !important;
@@ -61,15 +47,12 @@ a:hover, a:focus, a:active {
   text-align: right;
 }
 
-.navbar-main .navbar-brand {
-  border-bottom: none !important;
-}
 
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
   padding: 0;
-  width: 150px;
+  width: 100%;
   left: -35px;
   visibility: hidden;
   top: 85px;
@@ -126,7 +109,7 @@ a:hover, a:focus, a:active {
   background-color: #3C91E6;
   color: #FFFFFF;
   text-align: center;
-  height: 35%;
+  height: 30%;
 }
 
 .landing{
@@ -137,13 +120,13 @@ a:hover, a:focus, a:active {
 
 .toolbar{
   position: absolute;
-  top: 30%;
-  right: 40%;
+  top: 25%;
+  right: 45%;
 }
 
 .postage-btn{
   /* z-index: 1000;  */
-  font-weight: bold;
+  /* font-weight: bold; */
   background: #93E22F;
   /* position: absolute; */
   /* top: 30%;
@@ -168,7 +151,7 @@ a:hover, a:focus, a:active {
 #why-us{
   text-align: center;
   background-color: #E9E9E9;
-  height: 40%;
+  height: 35%;
   padding: 25px 25px 25px 25px;
   font-size: 16px;
 }
@@ -206,7 +189,7 @@ a:hover, a:focus, a:active {
 
 #howTo{
   background-color: #3C91E6;
-  height:75%;
+  height:65%;
   
 }
 
@@ -252,7 +235,7 @@ img{
 
 #resetDevice{
   background-color: #E9E9E9;
-  height: 75%;
+  height: 55%;
 }
 
 .resetDevice-col {
@@ -538,11 +521,24 @@ img{
 /* =============================================================================
 	Responsive
 ========================================================================== */
-/* Large devices (large desktops, 1200px and Down) */
-@media (max-width: 1200px) {
+/* Large devices (large desktops, 1024px and Down) */
+@media (max-width: 1024px) {
+  #section-landing{
+    height: 40%;
+  }
+
+  .toolbar{
+    right: 35%;
+    top: 35%;
+  }
+
+  #howTo{
+    height: 75%;
+  }
+
   .howTo-col {
     border-radius: 25px;
-    height: 75%;
+    height: 73%;
     text-align: center;
     background-color: #F2F2F2;
     margin-top: 30px;
@@ -550,126 +546,105 @@ img{
     padding: 5px;
     font-size: 16px;
   }
+
+  #why-us{
+    height: 43%;
+  }
+
+  #resetDevice{
+    height: 75%;
+  }
+  .resetDevice-col{
+    height: 73%;
+  }
 }
 /* Medium devices (desktops, 992px and Donw) */
 @media (max-width: 992px) {
-  .howTo-col {
-    margin-bottom: 30px;
-    font-size: 14px;
-    height: 70%;
+  .toolbar{
+    /* position: absolute; */
+    top: 35%;
+    right: 35%;
   }
-  #why-us h2{
+
+  /* #why-us h2{
     padding: 5px;
   }
+
   #why-us p{
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
   padding: 0px 10px 10px;
-  }
+  } */
+/* 
+  .howTo-col {
+    margin-bottom: 30px;
+    font-size: 14px;
+    height: 68%;
+  } */
 
-  .toolbar{
-    position: absolute;
-    top: 33%;
-    right: 30%;
-  }
-
-  #why-us {
-    height: 55%;
-  }
-
-  #resetDevice{
+  /* #resetDevice{
     height: 90%;
-  }
+  } */
 
   .resetDevice-col{
     height: 75%;
   }
-  img{
+  /* img{
     padding: 15px;
-  }
+  } */
 
-  .why-reasons{
+  /* .why-reasons{
     float: left;
     width: 33.3%;
     margin-bottom: 16px;
     text-size-adjust: 14px;
     font-weight: lighter;
-  }
+  } */
 
 }
 /* Small devices (tablets, 768px and Down) */
 @media (max-width: 768px) {
-  .navbar-main #navbar {
-    float: right !important;
-  }
-  .navbar-main #navbar a {
-    border-bottom: none;
-  }
-  .navbar-main .navbar-brand {
-    padding: 6px 15px;
-  }
-  .navbar-main .submenu {
-    position: initial;
-    display: none;
-    width: 100%;
-  }
-  .navbar-main li:hover .submenu,
-  .navbar-main li:active .submenu,
-  .navbar-main li:focus .submenu {
-    display: block;
-  }
-  .navbar-main li:hover .submenu li,
-  .navbar-main li:active .submenu li,
-  .navbar-main li:focus .submenu li {
-    background: #115c9b;
-    border-top-color: #1f76bd;
-  }
   
-  .landing{
-    height: 90%;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+ #section-landing{
+  height: 45%;
+ }
 
   .toolbar{
-    position: absolute;
-    top: 33%;
-    right: 25%;
+    /* position: absolute; */
+    top: 40%;
+    right: 30%;
   }
 
   #why-us{
-    padding: 5px 10px;
+    height: 53%;
   }
-  .howTo-Title{
-    text-align: center;
-  }
+  
   #howTo{
     height: auto;
   }
 
   .howTo-col{
-    float: left;
-    width: 80%;
+    float: right;
     text-size-adjust: 14px;
+    height: 53%;
   }
   
-  .resetDevice-Title{
-    text-align: center;
-  }
-
   #resetDevice{
-    margin-top: 2%;
     height: auto;
   }
 
-  #resetDevice-col{
-    height: 100%;
+  .resetDevice-col{
+    height: 50%;
   }
+
+  .contact-btn{
+    width: auto;
+  }
+
   .footer-why-us{
     border-radius: 10px;
     border: 2px solid #030303;
-    width: auto;
     height: auto;
     text-align: center;
   } 
@@ -728,20 +703,9 @@ img{
     overflow-x: hidden;
   }
 
-  .navbar-main {
-    /* overflow: hidden; */
-    background-color: #f2f2f2;
-    position: relative;
-  }
-
-  .navbar-main{
-    color: #F2F2F2 !important;
-    border-bottom: #F2F2F2;
-  }
-
   #section-landing{
     width: 100%;
-    height: 70%;
+    height: 78%;
   }
 
   .landing{

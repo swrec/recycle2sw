@@ -17,11 +17,12 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Template main Css -->
-    <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Bootsrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Template main Css -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -94,7 +95,6 @@
           Pre-Paid Shipping
         </button>
       </div>
-            
     </div>
   </div>
  </section>
@@ -312,7 +312,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="donateModalLabel">Contact Us!</h4>
         </div>
         <div class="modal-body">
@@ -365,7 +365,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="donateModalLabel">Recycle 5 or More Devices</h4>
         </div>
         <div class="modal-body">
@@ -433,6 +433,16 @@
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <script>
+    $(function () {
+        $('#deviceModal').on('click', function () {
+            $('#close').hide();
+        })
+    })
+    // $("#deviceModal").modal("hide"); 
+    // $("#contactModal").modal("hide"); 
   </script>
   </body>
 </html>
