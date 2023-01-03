@@ -61,7 +61,7 @@
             <li><a href="#howTo">How It Works</a></li>
             <li><a href="#resetDevice">Reset Device</a></li>
             <li><a href="#" data-toggle="modal" data-target="#contactModal">Contact</a></li>
-      
+
           </ul>
 
         </div> <!-- /#navbar -->
@@ -89,10 +89,10 @@
           <br>
           (Self-Paid Shipping)
         </a>
-        <button class="btn recycle-btn " type="button" data-toggle="collapse" data-target="#deviceModal" aria-expanded="false" aria-controls="collapseExample">
+        <button type="button" class="btn recycle-btn" data-toggle="modal" data-target="#deviceModal">
           Recycle 5+ Devices
           <br>
-          Pre-Paid Shipping
+          (Pre-Paid Shipping)
         </button>
       </div>
     </div>
@@ -289,7 +289,9 @@
   <section id="contact">
     <h2>More questions?</h2>
     <h2>Contact Us Now!</h2>
-    <button class="btn contact-btn" type="button" data-toggle="collapse" data-target="#contactModal" aria-expanded="false" aria-controls=""collapseExample>Contact</a>
+    <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">
+      Contact
+    </button>
   </section>
   
   <!-- main-footer -->
@@ -307,13 +309,14 @@
   </footer>
 
   <!-- Contact US Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
-
-    <div class="modal-dialog">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="donateModalLabel">Contact Us!</h4>
+          <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -327,19 +330,19 @@
               </div>
               <div class="col-md-8 ml-auto">
                 <form action="https://formspree.io/f/mjvzroge" method="POST" class="form">
-
+        
                   <div class="form-group">
                     <input type="text" name="name" class="form-control" placeholder="Name" required>
                   </div>
-    
+        
                   <div class="form-group">
                     <input type="email" name="email" class="form-control" placeholder="E-mail" required>
                   </div> 
-    
+        
                   <div class="form-group">
                     <textarea name="message" class="form-control" placeholder="Message" required></textarea>
                   </div>
-
+        
                   <div class="row-send">
                     <div class="form-group col-md-12">
                         <button type="submit" class="btn btn-primary pull-left" >Send Message</button>
@@ -348,28 +351,25 @@
                 
                 </form>
               </div>
+            </div>
           </div>
-          
-    
         </div>
-          
       </div>
     </div>
-    </div>
-
-  </div> 
+  </div>
+  
 
   <!-- 5 or more Devices -->
-  <div class="modal fade" id="deviceModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
-
-    <div class="modal-dialog">
+  <div class="modal fade" id="deviceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="donateModalLabel">Recycle 5 or More Devices</h4>
+          <h5 class="modal-title" id="exampleModalLabel">Recycle 5 or More Devices</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-
           <form action="https://formspree.io/f/mjvzroge" method="POST">
             <div class="row">
               <h3 class="title-style-1 text-center">Do your part for a greener tomorrow, recycle your devices now! <span class="title-under"></span>  </h3>
@@ -380,31 +380,30 @@
               <div class="form-group col-md-6">
                 <input type="text" class="form-control" name="email" placeholder="Email*" required>
               </div>
-    
+          
               
               <div class="form-group col-md-12">
                 <input type="text" class="form-control" name="address" placeholder="Address*">
               </div>
-    
+          
               <div class="form-group col-md-4">
                 <input type="text" class="form-control" name="city" placeholder="City*">
               </div>
-    
+          
               <div class="form-group col-md-4">
                 <input type="text" class="form-control" name="state" placeholder="State*">
               </div>
-    
+          
               <div class="form-group col-md-4">
                 <input type="text" class="form-control" name="zipcCode" placeholder="Zip Code*">
               </div>
-
+          
               <div class="form-group col-sm-12">
                 <button type="submit" class="btn btn-primary pull-right" name="submit" >Request Shipping Label</button>
               </div>
             </div> 
             
           </form>
-    
         </div>
       </div>
     </div>

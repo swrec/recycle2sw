@@ -192,6 +192,12 @@ $(function(){
 		
 	}
 
+	// const myModal = new bootstrap.Modal('#deviceModal');
+
+	// document.querySelector('.close').addEventListener('click', () =>{
+	// 	myModal.hide();
+	// });
+
 // 	var frmvalidator  = new Validator("contactform");
 // frmvalidator.addValidation("name","req","Please provide your name");
 // frmvalidator.addValidation("email","req","Please provide your email");
