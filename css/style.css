@@ -792,6 +792,14 @@ button{
     text-align: center;
   } 
 
+  .howTo-col{
+    height: auto;
+  }
+
+  .resetDevice-col{
+    height: auto;
+  }
+
   .resetDevice-col{
     height:auto;
   }
